@@ -2046,27 +2046,28 @@ In this document there's all the settings to get Radarr, Sonarr, Bazarr and Sabn
 >          }
 
 - x265 (HD)
->     {
->            "name": "x265 (HD)",
->            "includeCustomFormatWhenRenaming": false,
->            "specifications": [
->              {
->                "name": "x265/HEVC",
->                "implementation": "ReleaseTitleSpecification",
->                "negate": false,
->                "required": true,
->                "fields": {
->                  "value": "[xh][ ._-]?265|\\bHEVC(\\b|\\d)"
->                }
->              },
->              {
->                "name": "Not 2160p",
->                "implementation": "ResolutionSpecification",
->                "negate": true,
->                "required": true,
->                "fields": {
->                  "value": 2160
->                }
->              }
->            ]
->          }
+
+     {
+            "name": "x265 (HD)",
+            "includeCustomFormatWhenRenaming": false,
+            "specifications": [
+              {
+                "name": "x265/HEVC",
+                "implementation": "ReleaseTitleSpecification",
+                "negate": false,
+               "required": true,
+                "fields": {
+                  "value": "[xh][ ._-]?265|\\bHEVC(\\b|\\d)"
+                }
+              },
+              {
+                "name": "Not 2160p",
+                "implementation": "ResolutionSpecification",
+                "negate": true,
+                "required": true,
+                "fields": {
+                  "value": 2160
+                }
+              }
+            ]
+          }
