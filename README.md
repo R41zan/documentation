@@ -2046,9 +2046,8 @@ In this document there's all the settings to get Radarr, Sonarr, Bazarr and Sabn
 >          }
 
 - x265 (HD)
-     
-   
->           { 
+- 
+>        { 
 >            "name": "x265 (HD)",
 >            "includeCustomFormatWhenRenaming": false,
 >            "specifications": [
