@@ -1978,104 +1978,98 @@ In this document there's all the settings to get Radarr, Sonarr, Bazarr and Sabn
 >     }
 
 -TrueHD ATMOS
-
-   
-
->  {
->       "name": "TrueHD ATMOS",
->       "includeCustomFormatWhenRenaming": false,
->       "specifications": [
->         {
->           "name": "TrueHD",
->           "implementation": "ReleaseTitleSpecification",
->           "negate": false,
->           "required": true,
->           "fields": {
->             "value": "True[ .-]?HD|W4NK3R|HQMUX"
->           }
->         },
->         {
->           "name": "ATMOS",
->           "implementation": "ReleaseTitleSpecification",
->           "negate": false,
->           "required": true,
->           "fields": {
->             "value": "\\b(ATMOS|CtrlHD|W4NK3R|DON)(\\b|\\d)"
->           }
->         },
->         {
->           "name": "Not Basic Dolby Digital",
->           "implementation": "ReleaseTitleSpecification",
->           "negate": true,
->           "required": true,
->           "fields": {
->             "value": "\\bDD[^a-z+]|(?<!e)ac3"
->           }
->         },
->         {
->           "name": "Not Dolby Digital Plus ",
->           "implementation": "ReleaseTitleSpecification",
->           "negate": true,
->           "required": true,
->           "fields": {
->             "value": "\\bDD[P+]|\\b(e[-_. ]?ac3)\\b"
->           }
->         },
->         {
->           "name": "Not DTS",
->           "implementation": "ReleaseTitleSpecification",
->           "negate": true,
->           "required": true,
->           "fields": {
->             "value": "\\bDTS(\\b|\\d)"
->           }
->         },
->         {
->           "name": "Not DTS X",
->           "implementation": "ReleaseTitleSpecification",
->           "negate": true,
->           "required": true,
->           "fields": {
->             "value": "\\b(dts[-_. ]?x)\\b(?!\\d)"
->           }
->         },
->         {
->           "name": "Not FLAC",
->           "implementation": "ReleaseTitleSpecification",
->           "negate": true,
->           "required": true,
->           "fields": {
->             "value": "\\bFLAC(\\b|\\d)"
->           }
->         }
->       ]
->     }
+>     {
+>            "name": "TrueHD ATMOS",
+>            "includeCustomFormatWhenRenaming": false,
+>            "specifications": [
+>              {
+>                "name": "TrueHD",
+>                "implementation": "ReleaseTitleSpecification",
+>                "negate": false,
+>                "required": true,
+>                "fields": {
+>                  "value": "True[ .-]?HD|W4NK3R|HQMUX"
+>                }
+>              },
+>              {
+>                "name": "ATMOS",
+>                "implementation": "ReleaseTitleSpecification",
+>                "negate": false,
+>                "required": true,
+>                "fields": {
+>                  "value": "\\b(ATMOS|CtrlHD|W4NK3R|DON)(\\b|\\d)"
+>                }
+>              },
+>              {
+>                "name": "Not Basic Dolby Digital",
+>                "implementation": "ReleaseTitleSpecification",
+>                "negate": true,
+>                "required": true,
+>                "fields": {
+>                  "value": "\\bDD[^a-z+]|(?<!e)ac3"
+>                }
+>              },
+>              {
+>                "name": "Not Dolby Digital Plus ",
+>                "implementation": "ReleaseTitleSpecification",
+>                "negate": true,
+>                "required": true,
+>                "fields": {
+>                  "value": "\\bDD[P+]|\\b(e[-_. ]?ac3)\\b"
+>                }
+>              },
+>              {
+>                "name": "Not DTS",
+>                "implementation": "ReleaseTitleSpecification",
+>                "negate": true,
+>                "required": true,
+>                "fields": {
+>                  "value": "\\bDTS(\\b|\\d)"
+>               }
+>              },
+>              {
+>                "name": "Not DTS X",
+>                "implementation": "ReleaseTitleSpecification",
+>                "negate": true,
+>                "required": true,
+>                "fields": {
+>                  "value": "\\b(dts[-_. ]?x)\\b(?!\\d)"
+>                }
+>              },
+>              {
+>                "name": "Not FLAC",
+>                "implementation": "ReleaseTitleSpecification",
+>                "negate": true,
+>                "required": true,
+>                "fields": {
+>                  "value": "\\bFLAC(\\b|\\d)"
+>                }
+>              }
+>            ]
+>          }
 
 - x265 (HD)
-
-   
-
->  {
->       "name": "x265 (HD)",
->       "includeCustomFormatWhenRenaming": false,
->       "specifications": [
->         {
->           "name": "x265/HEVC",
->           "implementation": "ReleaseTitleSpecification",
->           "negate": false,
->           "required": true,
->           "fields": {
->             "value": "[xh][ ._-]?265|\\bHEVC(\\b|\\d)"
->           }
->         },
->         {
->           "name": "Not 2160p",
->           "implementation": "ResolutionSpecification",
->           "negate": true,
->           "required": true,
->           "fields": {
->             "value": 2160
->           }
->         }
->       ]
->     }
+>     {
+>            "name": "x265 (HD)",
+>            "includeCustomFormatWhenRenaming": false,
+>            "specifications": [
+>              {
+>                "name": "x265/HEVC",
+>                "implementation": "ReleaseTitleSpecification",
+>                "negate": false,
+>                "required": true,
+>                "fields": {
+>                  "value": "[xh][ ._-]?265|\\bHEVC(\\b|\\d)"
+>                }
+>              },
+>              {
+>                "name": "Not 2160p",
+>                "implementation": "ResolutionSpecification",
+>                "negate": true,
+>                "required": true,
+>                "fields": {
+>                  "value": 2160
+>                }
+>              }
+>            ]
+>          }
