@@ -1768,7 +1768,8 @@ In this document there's all the settings to get Radarr, Sonarr, Bazarr and Sabn
 
    
 
->  {
+
+>         { 
 >       "name": "PCM",
 >       "includeCustomFormatWhenRenaming": false,
 >       "specifications": [
@@ -1840,9 +1841,7 @@ In this document there's all the settings to get Radarr, Sonarr, Bazarr and Sabn
 
 - PQ
 
-    
-
-> {
+>        { 
 >       "name": "PQ",
 >       "includeCustomFormatWhenRenaming": false,
 >       "specifications": [
@@ -1904,10 +1903,8 @@ In this document there's all the settings to get Radarr, Sonarr, Bazarr and Sabn
 >     }
 
 - TrueHD
-
-   
-
->  {
+  
+>       {
 >       "name": "TrueHD",
 >       "includeCustomFormatWhenRenaming": false,
 >       "specifications": [
